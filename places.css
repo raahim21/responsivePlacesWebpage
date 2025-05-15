@@ -1,0 +1,142 @@
+#container {
+  position: static;
+}
+
+#page-logo a{
+  color: rgb(183, 230, 235);
+}
+
+header nav a {
+  color: rgb(183, 230, 235);
+}
+
+header nav a:hover{
+  color: rgb(59, 59, 59);
+  background-color: rgb(183, 230, 235);
+  
+}
+
+main ul img {
+  height: 280px;
+  object-fit: cover;
+  width: 300px;
+}
+
+main ul {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+
+li:nth-of-type(3) {
+  grid-column: 1 / 3;
+}
+main li {
+  background-color: white;
+  display: flex;
+
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+.card-content h2{
+  margin: 0;
+}
+.actions {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.card-btn {
+  padding: 5px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgb(235, 253, 215);
+  color: rgb(22, 211, 228);
+}
+
+.card-btn:hover {
+  background-color: rgb(235, 253, 255);
+}
+
+footer {
+  margin-top: 80px;
+}
+
+
+#Slider{
+  display: none;
+}
+
+#list ul {
+  width: 100%;
+}
+#list ul li{
+  background: linear-gradient(to bottom, #f8f9fa, #dee2e6);
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    border: 1px dashed black;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Slider a span{
+  height: 12px;
+}
+#Slider:target{
+  display: block;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  background-color: grey;
+  position: absolute;
+}
+#list{
+  position: relative;
+  top: 60px;
+}
+
+
+@media screen and (max-width:1230px) {
+  ul{
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
+  }
+
+  li:nth-of-type(3){
+    grid-column: auto !important;
+  }
+
+  main ul{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width:572px){
+  main ul li{
+    flex-direction: column;
+  }
+
+  main ul img{
+    width: 100%;
+  }
+  
+}

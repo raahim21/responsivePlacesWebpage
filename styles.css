@@ -1,0 +1,144 @@
+#hero{
+    height: 800px;
+    background-color: cadetblue;
+    background-image: url('images/places/ocean.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#hero-content{
+    width: 900px;
+    background-color: rgb(51, 47, 47, 0.8);
+    /* color: whitesmoke; */
+    box-shadow: 2px 4px 8px rgb(68, 68, 67);
+    border-radius: 6px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+
+}
+
+#list ul{
+
+    width: 100%;
+}
+
+#list li:hover{
+    background-color: #007BFF;
+    color: #333;
+}
+#list ul li{
+    background: linear-gradient(to bottom, #f8f9fa, #dee2e6);
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    border: 1px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Slider{
+    display: none;
+}
+
+#Slider a span{
+    height: 12px;
+}
+#Slider:target{
+    display: block;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    background-color: grey;
+    position: absolute;
+}
+#list{
+    position: relative;
+    top: 60px;
+}
+
+#hero-content a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background-color: rgb(255, 251, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#hero-content a:hover{
+    background-color: black;
+    color: rgb(255, 251, 0);
+
+}
+#highlights{
+    background: linear-gradient(180deg, rgb(21, 162, 153),  rgb(202, 243, 240));
+    padding: 24px;
+}
+
+#hero-content h1{
+    color: white;
+    text-transform: capitalize;
+    font-size: 50px;
+    margin: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+#hero-content p{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+}
+.place-image{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul img{
+    height: 200px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 8px rgb(68, 68, 67);
+    object-fit: cover;
+}
+
+
+#highlights h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(59, 65, 64);
+}
+
+
+/* #highlights{
+    width: 100px;
+    background-image: url("images/places/barcelona.jpg");
+    height: 500px;
+} */
+
+
+
+@media screen and (max-width:1030px){
+    #destinations{
+      flex-direction: column;
+    }
+  }
